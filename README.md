@@ -1,4 +1,4 @@
 # node-fallout-game
-A crappy fallout hacking game for node.js
+A crappy Fallout 3 like hacking game for node.js
 
 Slightly contrived.
