@@ -107,12 +107,15 @@ actionHandler['guess'] = function(cmds){
         var guessResult = theGame.guess(cmds[1]);
 
         //Winning
-        if(guessResult == 7){ ///Ehhh really?
-
+        if(typeof guessResult == 'undefined'){
+            console.log("No more guesses....");
         }
-
-
-        console.log(theGame.guess(cmds[1]));
+        else if(guessResult == 7){ ///Ehhh really?
+            console.log("You win!");
+        }
+        else{
+            console.log(guessResult + " characters matched.");
+        }
     }
     else{
         console.log("You didn't guess anything!");
